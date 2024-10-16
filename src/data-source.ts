@@ -8,6 +8,6 @@ export const AppDataSource = new DataSource({
   password: 'root', // replace 'your_password' with the actual password
   database: 'postgres', // your database name
   entities: [__dirname + '/entities/*.entity{.ts,.js}'],
-  migrations: [__dirname + '/migrations/*{.ts,.js}'],
-  synchronize: true,
+  migrations: ['db/migrations/*{.ts,.js}'],
+  synchronize: false,
 });
